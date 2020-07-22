@@ -21,8 +21,8 @@ Two CNN models, one using an Adam optimizer and the other using a customized SGD
 ### Training
 The model is trained on a [dataset](https://drive.google.com/file/d/1liKRmKdbabq5NZqaLYr7FZEq6BVBAIBS/view?usp=sharing) of 8 classes, a total of approximately 3800 images provided by the Nature Conservancy. The training time is approximately 5.5 hours on an NVidia K80 GPU.
 
-### Checkpoints 
-The checkpoints of the Models using an [Adam optimizer](https://drive.google.com/file/d/1dP1LCAm-hjWczF3joq5IqGQBJ5vWILTv/view?usp=sharing) and a [customized SGD](https://drive.google.com/file/d/1xbpDiAztdq7PEK6fG3GDcmoRy1yknJDj/view?usp=sharing) optimizer can be access via the URLs, respectively.
+### Weights 
+The weights of the Models using an [Adam optimizer](https://drive.google.com/file/d/1dP1LCAm-hjWczF3joq5IqGQBJ5vWILTv/view?usp=sharing) and a [customized SGD](https://drive.google.com/file/d/1xbpDiAztdq7PEK6fG3GDcmoRy1yknJDj/view?usp=sharing) optimizer can be access via the URLs, respectively.
 
 
 ## Sequential Protein Subcellular Localization Classification
@@ -39,7 +39,7 @@ Two CNN models, one using the pre-trained imagenet Inception-Resnet-V2 model and
 ### Training
 The model is trained on an approximately 14GB [dataset](https://www.kaggle.com/c/human-protein-atlas-image-classification/data) provided by the *Human Protein Atlas* program, including more than 124,000 confocal microscopy images of human proteins. The training time is approximately 2 hours for the Inception-Resnet-V2 model and 1.5 hours for the Vgg16 model on an NVidia K80 GPU.
 
-### Weights
-The weights of the Models using the [Inception-Resnet-V2 model](https://drive.google.com/file/d/1saABuaSbW_-nGEQqzcLeO36s6aES10xB/view?usp=sharing) and the [Vgg16 model](https://drive.google.com/file/d/1zyAwpOU82lppnEsR6oJd2Jx0FqBuBZxU/view?usp=sharing) can be access via the URLs, respectively.
+### Checkpoints
+The checkpoints of the Models using the [Inception-Resnet-V2 model](https://drive.google.com/file/d/1saABuaSbW_-nGEQqzcLeO36s6aES10xB/view?usp=sharing) and the [Vgg16 model](https://drive.google.com/file/d/1zyAwpOU82lppnEsR6oJd2Jx0FqBuBZxU/view?usp=sharing) can be access via the URLs, respectively.
 
 ### 

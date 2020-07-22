@@ -1,8 +1,9 @@
 # nature-notebook
-A set of notebooks that leverages classical ML algorithms and deep learning approaches to address a series of issues in the field of conservation and biology.
+A set of notebooks that leverage classical ML algorithms and deep learning approaches to address a series of issues in the field of conservation and biology.
 
-* CycleGAN Image Conversion: Cycle-consistent Generative Adversarial Network (CycleGAN), Keras.
-* The Nature Conservancy Fisheries Monitoring: CNN, Keras.
+* CycleGAN Image Conversion: Cycle-consistent Generative Adversarial Network (CycleGAN), generative, Keras.
+* The Nature Conservancy Fisheries Monitoring: CNN, image classification, Keras.
+* Sequential Protein Subcellular Localization Classification: RNN, LSTM, CNN, classification, Theano.
 
 ## CycleGAN Image Conversion
 ### Model
@@ -21,3 +22,12 @@ The model is trained on a [dataset](https://drive.google.com/file/d/1liKRmKdbabq
 
 ### Weights 
 The Weights of the Models using an [Adam optimizer](https://drive.google.com/file/d/1dP1LCAm-hjWczF3joq5IqGQBJ5vWILTv/view?usp=sharing) and a [customized SGD](https://drive.google.com/file/d/1xbpDiAztdq7PEK6fG3GDcmoRy1yknJDj/view?usp=sharing) optimizer can be access via the URLs, respectively.
+
+
+## Sequential Protein Subcellular Localization Classification
+### Model
+A Recurrent Neural Network (RNN), specifically a CNN-LSTM model is implemented in Theano to single-class classify the subcellular localization of a protein given its sequence, from a set of 10 classes of subcellular structures. The model consists of both convolutional layers and a pair of bidirectional LSTM (RNN) layers. The model achieves around 80% - 85% accuracy.
+
+### Training
+The model is trained on the *MultiLoc* dataset, which consists of around 6000 protein sequence samples. Each protein sequence is labelled with a class of subcellular structure that it localizes. The model is trained on AMD Radeon Pro 5300M CPU.
+

@@ -1,11 +1,11 @@
 # nature-notebook
 A set of notebooks that leverage classical ML algorithms and deep learning approaches to address a series of issues in the field of conservation and biology.
 
-* [CycleGAN Image Conversion](##cyclegan-image-conversion): Cycle-consistent Generative Adversarial Network (CycleGAN), generative, Keras.
-* [The Nature Conservancy Fisheries Monitoring](##the-nature-conservancy-fisheries-monitoring): CNN, image classification, Keras.
-* [Sequential Protein Subcellular Localization Classification](##sequential-protein-subcellular-localization-classification): RNN, LSTM, CNN, classification, Theano.
-* [Human Protein Atlas Image Classification](##human-protein-atlas-image-classification): CNN, Inception-ResNet-V2, Vgg16, image-classification, Keras.
-* [Forest Cover Type Analysis](##forest-cover-type-analysis): KNN, Gaussian Naïve Bayes, Decision Tree, SVM, Random Forest, Extra Trees, Boosts, feature-selection, classification, tensorflow, scikit-learn.
+* [CycleGAN Image Conversion](#cyclegan-image-conversion): Cycle-consistent Generative Adversarial Network (CycleGAN), generative, Keras.
+* [The Nature Conservancy Fisheries Monitoring](#the-nature-conservancy-fisheries-monitoring): CNN, image classification, Keras.
+* [Sequential Protein Subcellular Localization Classification](#sequential-protein-subcellular-localization-classification): RNN, LSTM, CNN, classification, Theano.
+* [Human Protein Atlas Image Classification](#human-protein-atlas-image-classification): CNN, Inception-ResNet-V2, Vgg16, image-classification, Keras.
+* [Forest Cover Type Analysis](#forest-cover-type-analysis): KNN, Gaussian Naïve Bayes, Decision Tree, SVM, Random Forest, Extra Trees, Boosts, feature-selection, classification, tensorflow, scikit-learn.
 
 ## CycleGAN Image Conversion
 ### Model

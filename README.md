@@ -7,6 +7,7 @@ A set of notebooks that leverage classical ML algorithms and deep learning appro
 * [Human Protein Atlas Image Classification](#human-protein-atlas-image-classification): CNN, Inception-ResNet-V2, Vgg16, image-classification, Keras.
 * [Forest Cover Type Analysis](#forest-cover-type-analysis): KNN, Gaussian Naïve Bayes, Decision Tree, SVM, Random Forest, Extra Trees, Boosts, ANN, feature-selection, classification, Tensorflow, Scikit-learn.
 * [Australian Bushfire Analysis](#australian-bushfire-analysis): KNN, LR, Decision Tree, Random Forest, SVM/SVR, classification, regression, ANN, data visualization, Seaborn, Scikit-learn, Tensorflow.
+* [Fathead Minnow Toxicity Analysis](#fathead-minnow-toxicity-analysis): SVR, LR, ANN, regression, Seaborn, Scikit-learn, Tensorflow.
 
 ## CycleGAN Image Conversion
 ### Model
@@ -65,4 +66,15 @@ The 2019-2020 Australian Bushfire season had unprecedented fire conditions, and 
 After attempting various regression models including SVR (with linear or RBF kernel), linear regression, and ANN (with Rmsprop/Adam optimizer), it is proven that the dataset has insufficient/biased data for regression modelling. Thus, the regression problem has turned into a single-label classification problem -- given the fire instances in Australia, predict the PM10 *level* (from 4 classes) in one of the three cities on a given day. A variety of ML statistical models are attempted such as KNN, Logistic Regression (LR), Decision Tree, Random Forest, and SVC, and it is concluded that the Decision Tree model is best for Sydney and Adelaide, and the KNN model is best for Brisbane, despite of the fact that the F1-scores of those models are poor and range between 0.6-0.8 due to the limitation of the dataset. In exploration of the relationship between the confidence level of a fire instance and other instance attributes, after attempting KNN, LR, Decision Tree, and Random Forest, it is concluded that the Random Forest model is best-performing and has a 0.96 F1-score.
 
 ### Training
-The models are trained on the satellite fire instances data, and the air quality data of Adelaide, Brisbane and Sydney. The fire instances dataset is [NASA's VIIRS I-Band 375m Active Fire Data](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/viirs-i-band-active-fire-data); The datasets of the cities' air quality are downloaded from [South Australian Government Data Directory](https://data.sa.gov.au/data/dataset/adelaide-cbd-air-quality-monitoring-station-particle), [Queensland Government Environment, Land and Water](https://apps.des.qld.gov.au/air-quality/download/), and [NSW Department of Planning, Industry and Environment](https://www.dpie.nsw.gov.au/air-quality/search-for-and-download-air-quality-data). The models are trained on AMD Radeon Pro 5300M CPUs. 
+The models are trained on the satellite fire instances data, and the air quality data of Adelaide, Brisbane and Sydney. The fire instances dataset is [NASA's VIIRS I-Band 375m Active Fire Data](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/viirs-i-band-active-fire-data); The datasets of the cities' air quality are downloaded from [South Australian Government Data Directory](https://data.sa.gov.au/data/dataset/adelaide-cbd-air-quality-monitoring-station-particle), [Queensland Government Environment, Land and Water](https://apps.des.qld.gov.au/air-quality/download/), and [NSW Department of Planning, Industry and Environment](https://www.dpie.nsw.gov.au/air-quality/search-for-and-download-air-quality-data). The models are trained on AMD Radeon Pro 5300M CPUs.
+
+
+## Fathead Minnow Toxicity Analysis
+### Purpose
+Fathead minnow (*Pimephales promelas*) is a species of freshwater fish that is commonly used to analyze various chemicals' and toxins' effects on aquatic organisms. In this project, a variety of statistical algorithms and an ANN is attempted to predict the LC50 toxicity level in Fathead minnow given the concentration level of six derived molecular descriptors.
+
+### Model
+Regression models including SVR and linear regression, and an Artificial Neural Network (ANN) are implemented using Scikit-learn. It is concluded that the SVR model with a radial basis function kernel is the best-performing model with an RMSE of 0.805.
+
+### Training
+The model is trained on a dataset of 908 instances of fish toxicity data collected in the [research by M.Cassotti et al](https://www.tandfonline.com/doi/full/10.1080/1062936X.2015.1018938?scroll=top&needAccess=true&). The models are trained on AMD Radeon Pro 5300M CPUs. 

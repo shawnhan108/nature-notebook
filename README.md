@@ -3,7 +3,7 @@ A set of notebooks that leverage classical ML algorithms and deep learning appro
 
 * [CycleGAN Image Conversion](#cyclegan-image-conversion): Cycle-consistent Generative Adversarial Network (CycleGAN), generative, Keras.
 * [The Nature Conservancy Fisheries Monitoring](#the-nature-conservancy-fisheries-monitoring): CNN, image classification, Keras.
-* [Sequential Protein Subcellular Localization Classification](#sequential-protein-subcellular-localization-classification): RNN, LSTM, CNN, classification, Theano.
+* [Sequential Protein Subcellular Localization Classification](#sequential-protein-subcellular-localization-classification): RNN, bidirectional LSTM, CNN, classification, Theano.
 * [Human Protein Atlas Image Classification](#human-protein-atlas-image-classification): CNN, Inception-ResNet-V2, Vgg16, image-classification, Keras.
 * [Forest Cover Type Analysis](#forest-cover-type-analysis): KNN, Gaussian Naïve Bayes, Decision Tree, SVM, Random Forest, Extra Trees, Boosts, ANN, feature-selection, classification, Tensorflow, Scikit-learn.
 * [Australian Bushfire Analysis](#australian-bushfire-analysis): KNN, LR, Decision Tree, Random Forest, SVM/SVR, classification, regression, ANN, data visualization, Seaborn, Scikit-learn, Tensorflow.

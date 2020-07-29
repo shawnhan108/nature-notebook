@@ -1,5 +1,5 @@
 # nature-notebook
-A set of notebooks that leverage classical ML algorithms and deep learning approaches to address a series of issues in the field of conservation and biology.
+A set of notebooks that leverage classical ML algorithms and DL neural nets using TF, Keras and Theano to address a series of issues in the field of conservation and biology.
 
 * [CycleGAN Image Conversion](#cyclegan-image-conversion): Cycle-consistent Generative Adversarial Network (CycleGAN), generative, Keras.
 * [The Nature Conservancy Fisheries Monitoring](#the-nature-conservancy-fisheries-monitoring): CNN, image classification, Keras.
